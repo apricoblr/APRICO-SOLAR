@@ -1,0 +1,6 @@
+{
+  "name": "APRICO CLOUD",
+  "description": "APRICO CLOUD - Multi-project work order and site expense tracker with automated receipt scanning and monthly budget reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

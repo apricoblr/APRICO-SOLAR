@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "Project": {
+      "collection": "projects",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "location": { "type": "string" },
+        "capacity": { "type": "string" },
+        "createdAt": { "type": "number" },
+        "adminEmail": { "type": "string" }
+      }
+    },
+    "WorkOrder": {
+      "collection": "work_orders",
+      "fields": {
+        "id": { "type": "string" },
+        "projectId": { "type": "string" },
+        "projectName": { "type": "string" },
+        "workOrderNumber": { "type": "string" },
+        "clientName": { "type": "string" },
+        "contractorName": { "type": "string" },
+        "baseBudget": { "type": "number" },
+        "gstPercentage": { "type": "number" },
+        "gstAmount": { "type": "number" },
+        "totalBudget": { "type": "number" },
+        "durationDays": { "type": "number" },
+        "startDate": { "type": "string" },
+        "status": { "type": "string" },
+        "taskCount": { "type": "number" },
+        "createdBy": { "type": "string" },
+        "createdAt": { "type": "number" }
+      }
+    },
+    "Task": {
+      "collection": "tasks",
+      "fields": {
+        "id": { "type": "string" },
+        "workOrderId": { "type": "string" },
+        "projectId": { "type": "string" },
+        "itemNumber": { "type": "string" },
+        "category": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "uom": { "type": "string" },
+        "totalQty": { "type": "number" },
+        "unitPrice": { "type": "number" },
+        "totalBudget": { "type": "number" },
+        "completedQty": { "type": "number" },
+        "status": { "type": "string" }
+      }
+    },
+    "Expense": {
+      "collection": "expenses",
+      "fields": {
+        "id": { "type": "string" },
+        "workOrderId": { "type": "string" },
+        "projectId": { "type": "string" },
+        "taskId": { "type": "string" },
+        "taskTitle": { "type": "string" },
+        "category": { "type": "string" },
+        "amount": { "type": "number" },
+        "date": { "type": "string" },
+        "monthYear": { "type": "string" },
+        "vendorName": { "type": "string" },
+        "billNumber": { "type": "string" },
+        "expenseType": { "type": "string" },
+        "paymentMode": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdBy": { "type": "string" },
+        "timestamp": { "type": "number" }
+      }
+    }
+  }
+}

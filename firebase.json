@@ -1,0 +1,6 @@
+{
+  "firestore": {
+    "database": "ai-studio-android-tasktrac-0e7fce5c-8b63-458e-acb5-6eeb5c2e2323",
+    "rules": "firestore.rules"
+  }
+}
